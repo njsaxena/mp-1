@@ -51,7 +51,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 5.6px;
 }
 
@@ -62,14 +62,14 @@ nav a {
     font-size: calc(12.8px + 0.15vw);
     font-weight: 600;
     padding: 10.4px 12.8px;
-    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: 0.2s ease;
 }
 
 nav a:hover,
 nav a:focus {
     background-color: #1f7a4d;
-    border-left-color: #dcefe5;
+    border-bottom-color: #dcefe5;
 }
 
 main {
@@ -301,12 +301,11 @@ footer a {
     }
 
     nav {
-        width: 28%;
-        align-self: stretch;
+        width: 100%;
     }
 
     main {
-        width: 72%;
+        width: 100%;
     }
 }
 
